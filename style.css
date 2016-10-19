@@ -6,11 +6,12 @@ h1 {
 }
 body {
   background-color: grey;
-  text-align: center;
+
 }
 p {
   color: white;
   font-size: 20px;
+  text-align: center;
 }
 .img {
   width: 330px;
@@ -20,4 +21,11 @@ IMG.img {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+h2{
+  color: white;
+}
+ol {
+  color: white;
+  list-style-type: circle;
 }
