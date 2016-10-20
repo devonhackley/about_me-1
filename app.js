@@ -1,7 +1,9 @@
 'use strict';
 
+//Variables
 var answerListing = ['yes','no','yes','no','yes'];
 var questionListing = ['Is Christina terrified of small breed horses?','Is Christina\'s favorite medium acrylics?','Has Christina climbed Mount Huashan?','Can Christina play the guitar?','Does Christina occasionally dream of being a storm chaser?'];
+
 //functions
 function quiz() {
   for (var i = 0; i < questionListing.length; i++){
@@ -16,8 +18,28 @@ function quiz() {
   }
 }
 
+function quizTwo() {
+  var guessCounter = 0;
+  var numSiblings = 6;
+  while (guessCounter < 4) {
+    var answerSix = parseInt(prompt('How many siblings do I have? '));
+    guessCounter++;
+    if (answerSix === numSiblings) {
+      alert('Correct');
+      break;
+    } else if (answerSix < numSiblings) {
+      alert('Guess higher');
+    }else if (answerSix > numSiblings){
+      alert('Guess lower');
+    }else {
+      alert('Incorrect input, type a number!');
+    }
+  }
+}
+
 //Do stuff
 quiz();
+quizTwo();
 
 // console.log('quiz1: ', quiz1);
 // console.log(quiz1.toLowerCase());
