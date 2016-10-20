@@ -73,14 +73,21 @@ while(guessCounter < 4) {
     alert('Guess again!');
   }
 }
+var state = ['Alabama', 'Georgia', 'Iowa', 'California', 'Montana'];
+var arrayLength = state.length;
 var guessCounter = 0;
-var state = ['Alabama', 'Georgia', 'Iowa'];
-while(guessCounter < 6) {
-  var quiz7 = prompt('What States have I lived in other than Washington?');
-  guessCounter++;
-  forEach(stateCounter = 0, stateCounter < state.length, stateCounter++);
-  if(quiz7 != state[stateCounter]) {
-    alert('Wrong');
-    break;
+var i;
+
+for (i = 0; i < arrayLength; i++) {
+  guessCounter = (i + 1);
+  while (guessCounter < 6) {
+    prompt('What States have I lived in?');
+  }
+  while(i != arrayLength) {
+    alert('Incorrect!');
+  }
+  if (i === arrayLength) {
+    alert('Correct!');
   }
 }
+//}

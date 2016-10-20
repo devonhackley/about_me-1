@@ -18,21 +18,14 @@ p {
   width: 330px;
   height: 400px;
 }
-img.img {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-}
 h2{
   color: white;
   font-size: italic;
 }
 ol {
-  display: inline-block;
   padding: 20px;
   list-style-type: circle;
   color: white;
   border-style: solid;
-  border-width: ;
   background-color: #97C0E8;
 }
