@@ -2,7 +2,7 @@ h1 {
   size: 30px;
   text-align: center;
   color: white;
-  font-family: Times;
+  font-style: italic;
 }
 body {
   background-color: grey;
@@ -12,12 +12,13 @@ p {
   color: white;
   font-size: 20px;
   text-align: center;
+  font-style: italic;
 }
 .img {
   width: 330px;
   height: 400px;
 }
-IMG.img {
+img.img {
   display: block;
   margin-right: auto;
   margin-left: auto;

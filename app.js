@@ -3,7 +3,6 @@
 var quiz1 = prompt('Is Christina terrified of small breed horses?');
 console.log('quiz1: ', quiz1);
 console.log(quiz1.toLowerCase());
-console.log(quiz1);
 if (quiz1.toLowerCase() === 'yes') {
   alert('To a degree, note we didn\'t call them ponies. +1');
 }
@@ -30,7 +29,7 @@ else {
 var quiz3 = prompt('Has Christina climbed Mount Huashan?');
 console.log('quiz3:', quiz3);
 console.log(quiz3.toLowerCase());
-if (quiz3.toLowerCase === 'yes') {
+if (quiz3.toLowerCase() === 'yes') {
   alert('It was exhilarating. +1');
 }
 else if (quiz3.toLowerCase() === 'no') {
@@ -60,4 +59,17 @@ else if (quiz5 === 'no') {
 }
 else {
   alert('"Yes" or "No"');
+}
+var guessCounter = 0;
+while(guessCounter < 4) {
+  var quiz6 = parseInt(prompt('how many siblings do I have?'));
+  guessCounter++;
+  if(quiz6 === 6) {
+    alert('Correct!');
+    break;
+  }else if(quiz6 < 6){
+    alert('Guess again!');
+  }else if(quiz6 > 6) {
+    alert('Guess again!');
+  }
 }
