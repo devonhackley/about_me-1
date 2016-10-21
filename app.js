@@ -62,7 +62,7 @@ else {
 }
 var guessCounter = 0;
 while(guessCounter < 4) {
-  var quiz6 = parseInt(prompt('how many siblings do I have?'));
+  var quiz6 = parseInt(prompt('How many siblings do I have?'));
   guessCounter++;
   if(quiz6 === 6) {
     alert('Correct!');
@@ -71,5 +71,16 @@ while(guessCounter < 4) {
     alert('Guess again!');
   }else if(quiz6 > 6) {
     alert('Guess again!');
+  }
+}
+var guessCounter = 0;
+var state = ['Alabama', 'Georgia', 'Iowa'];
+while(guessCounter < 6) {
+  var quiz7 = prompt('What States have I lived in other than Washington?');
+  guessCounter++;
+  forEach(stateCounter = 0, stateCounter < state.length, stateCounter++);
+  if(quiz7 != state[stateCounter]) {
+    alert('Wrong');
+    break;
   }
 }

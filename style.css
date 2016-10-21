@@ -5,7 +5,7 @@ h1 {
   font-style: italic;
 }
 body {
-  background-color: grey;
+  background-color: #D4EDFF;
 
 }
 p {
@@ -25,8 +25,14 @@ img.img {
 }
 h2{
   color: white;
+  font-size: italic;
 }
 ol {
-  color: white;
+  display: inline-block;
+  padding: 20px;
   list-style-type: circle;
+  color: white;
+  border-style: solid;
+  border-width: ;
+  background-color: #97C0E8;
 }
